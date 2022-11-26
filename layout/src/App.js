@@ -36,10 +36,8 @@ function App() {
   }];
 
   const cardsLayout = {
-    xs: 12,
-    sm: 8,
-    md: 6,
-    lg: 4
+    small: 4,
+    large: 12
   };
 
   return (

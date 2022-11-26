@@ -7,8 +7,8 @@ const ProductsList = (props) => {
     const products = props.products;
     const choose = props.choose;
 
-    const divClass = choose > 6 ? 'productsFlexRow' :'productsFlexColumn';
-    const itemClass = choose > 6 ? 'productsFlexColumn':'productsFlexRow';
+    const divClass = choose > 2 ? 'productsFlexRow' :'productsFlexColumn';
+    const itemClass = choose < 2 ? 'productsFlexColumn':'productsFlexRow';
     return(  
             <div className={divClass}>
                 {products.map 
