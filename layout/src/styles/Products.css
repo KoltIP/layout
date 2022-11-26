@@ -1,23 +1,30 @@
 *{
     color:grey;
+    font-size: small;
+    
 }
 
 .productItem{
-    font-size: small;
-    font-weight: 300;
-    color: black;
     border : none;
-    margin-right: 100px;
-    height: 50px;
-    width:1000px;    
+    height: 50px; 
     text-align: center;
+    font-weight: 300;   
 }
 
-.productsFlex{
+.productsFlexColumn{
     display:flex;
     flex-direction:column;
     flex-wrap: nowrap;
-    flex: 1;
+    flex: 1;    
+    align-items:flex-start; 
+}
+
+.productsFlexRow{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    flex: 1;    
+    text-align: center;
 }
 
 .toolBarItemActive{
@@ -29,17 +36,6 @@
     margin-right: 10px;
     height: 25px;
     width:100px;    
-    text-align: center;
-}
-
-.tableProduct{
-    border: rgb(246, 246, 246);
-    margin: 20px;
-    width: 100%;
-}
-
-.productTableItem{
-    background-color:rgb(246, 246, 246);
     text-align: center;
 }
 
@@ -57,5 +53,5 @@
     color: red;
     border: 1px solid red;
     border-radius: 10px;
-
+    
 }

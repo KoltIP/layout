@@ -6,18 +6,21 @@ const ProductsList = (props) => {
     
     const products = props.products;
     const choose = props.choose;
-    console.log(choose);
+
+    const divClass = choose > 6 ? 'productsFlexRow' :'productsFlexColumn';
+    const itemClass = choose > 6 ? 'productsFlexColumn':'productsFlexRow';
     return(  
-    <table className='tableProduct'>
-        <thead></thead>
-        <tbody>
-            {products.map 
-            (
-                (item, index) => <ProductItem key={index} product={item} />
-            )}
-        </tbody>
-        <tfoot></tfoot>
-    </table>
-    )    
+            <div className={divClass}>
+                {products.map 
+                (
+                    (item, index) => 
+                    <ProductItem
+                        key={index}
+                        product={item}
+                        className = {itemClass}
+                    />
+                )}
+            </div>
+        )    
 }
 export default ProductsList;
