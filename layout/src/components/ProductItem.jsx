@@ -2,11 +2,11 @@ import React from 'react';
 import classes from '../styles/Products.css'
 
 const ProductsList = (props) => {
-    const item = props.product;
-    
+
+    const item = props.product;    
 
     return( 
-        <div>
+        <div className='item'>
             <img width='200' hieght='150' src={item.img} alt={item.name}></img>
             <span className='name'>{item.name}</span>            
             <span>{item.color}</span>

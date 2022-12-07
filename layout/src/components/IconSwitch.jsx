@@ -7,9 +7,10 @@ const Menu = (props) => {
 
     const icon = props.icon;
     const action = props.action;
+    const select = props.select;
 
     const Choose=()=>{
-        action();
+        action(select);
     }
 
     return(      

@@ -7,10 +7,10 @@ const Menu = (props) => {
 
     const action = props.action;   
     const select = props.select;
-    const icon = (select > 1) ? "view_list" : "view_module";
+    const icon = (select === true) ? "view_list" : "view_module";
 
     return(     
-        <IconSwitch icon={icon} action={action}/>
+        <IconSwitch icon={icon} action={action} select = {select}/>
     )    
 }
 export default Menu;

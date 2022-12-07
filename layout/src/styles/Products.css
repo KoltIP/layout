@@ -4,19 +4,16 @@
     
 }
 
-.productItem{
-    border : none;
-    height: 50px; 
-    text-align: center;
-    font-weight: 300;   
+.item{
+    background-color: rgb(241, 240, 239);
+    margin:10px;
 }
 
 .productsFlexColumn{
     display:flex;
     flex-direction:column;
     flex-wrap: nowrap;
-    flex: 1;    
-    align-items:flex-start; 
+    flex: 1;     
 }
 
 .productsFlexRow{
@@ -24,20 +21,9 @@
     flex-direction:row;
     flex-wrap: nowrap;
     flex: 1;    
-    text-align: center;
 }
 
-.toolBarItemActive{
-    color:white;
-    background-color: grey;
-    font-size: small;
-    font-weight: 300;
-    border: 2px solid grey;
-    margin-right: 10px;
-    height: 25px;
-    width:100px;    
-    text-align: center;
-}
+
 
 .name{
     color:black;
@@ -52,6 +38,6 @@
 .button{
     color: red;
     border: 1px solid red;
-    border-radius: 10px;
-    
+    border-radius: 10px;    
 }
+

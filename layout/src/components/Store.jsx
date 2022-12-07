@@ -4,27 +4,20 @@ import ProductsList from './ProductsList';
 
 const Store = (props) => {
     
-    const [select,setSelect] = useState(0);
+    const [select,setSelect] = useState(false);
 
     const products = props.products;
     const cards = props.cardsLayout;
     
 
-    const Show = () =>
+    const Show = (select) =>
     {   
-        const buffer = select;
-        setSelect(buffer+1);         
-        
-        if (select>2)
-        {
-            console.log("Сброс");
-            setSelect(1);
-        }
+        setSelect(!select); 
     }
     
     return(  
     <div>
-        <Menu cards = {cards} select={select} action={Show} />
+        <Menu cards = {cards} select={select} action={(select)=>{Show(select)}} />
         <ProductsList products = {products} choose={select}/>
     </div>
     )    
