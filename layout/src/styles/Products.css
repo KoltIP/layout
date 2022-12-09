@@ -6,7 +6,11 @@
 
 .item{
     background-color: rgb(241, 240, 239);
-    margin:10px;
+    margin:30px;
+}
+
+.elem{
+    margin-right:60px;
 }
 
 .productsFlexColumn{
